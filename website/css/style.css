@@ -1,0 +1,367 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+}
+
+/* Global */
+ul li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #f2f2f2;
+}
+
+button{
+    background: #e8491d;
+    border: none;
+    height: 30px;
+    padding: 0 10px;
+    color: #f2f2f2;
+}
+
+/* Header */
+header{
+    height: 90px;
+    background: #35424a;
+    border-bottom: 3px solid #e8491d;
+}
+
+.branding h1{
+    margin-top: 25px;
+    font-size: 35px;
+}
+
+header .container{
+    width: 80%;
+    margin: auto;
+    color: #f2f2f2;
+}
+
+.branding{
+    float: left;
+}
+
+.branding .header-design{
+    color: #e8491d;
+}
+
+.navbar{
+    float: right;
+    margin-top: 18px;
+}
+.nav-items li{
+    float: left;
+    padding: 20px;
+    font-size: 18px;
+}
+
+.nav-items .current a{
+    color: #e8491d;
+}
+
+.nav-items li a:hover{
+    font-weight: bold;
+    color: #c2c2c2;
+}
+
+/* Showcase */
+
+section .showcase {
+   min-height: 400px;
+   background-image: url("../img/showcase.jpg");
+   background-repeat: no-repeat;
+   background-position: 0 -400px;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   clear: both;
+}
+
+.showcase .content {
+    color: #f2f2f2;
+    padding: 40px;
+    width: 70%;
+    line-height: 1.7;
+}
+
+.showcase .content h1{
+    font-size: 45px;
+}
+
+/* Newsettler */
+
+.newsettler{
+    height: 70px;
+    background: #35424a;
+    color: #f2f2f2;
+}
+
+.newsettler .container{
+    width: 70%;
+    margin: auto;
+}
+
+.subscribe{
+    float: left;
+}
+
+.subscribe h3 {
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.settler-form{
+    float: right;
+    margin-top: 20px;
+}
+
+.settler-form input[type="email"]{
+    height: 30px;
+    width: 220px;
+}
+
+/* Service section */
+
+.tools{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.boxes{
+    padding: 20px;
+}
+
+.boxes h3{
+    font-size: 22px;
+}
+
+.boxes img{
+    width: 100px;
+}
+
+/* Footer */
+.footer {
+    height: 70px;
+    background: #e8491d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f2f2f2;
+    clear: both;
+}
+
+
+/* About */
+.about-section{
+    width: 80%;
+    margin: auto;
+    line-height: 1.5;
+}
+.about-content{
+    float: left;
+    width: 60%;
+}
+.about-content h1{
+    margin: 16px 0;
+}
+
+.about-aside{
+    float: right;
+    width: 30%;
+}
+.about-aside h2{
+    margin: 16px 0;
+}
+.about-para{
+    margin: 20px 0;
+    background: #35424a;
+    padding: 10px;
+    color: #f2f2f2;
+}
+.aside-para{
+    background: #35424a;
+    padding: 10px;
+    color: #f2f2f2;
+}
+
+/* Services */
+.service-container{
+    width: 85%;
+    margin: auto;
+}
+.service-items{
+    float: left;
+    width: 75%;
+}
+.service-items h1{
+    margin: 15px 0;
+    font-size: 22px;
+}
+.service-aside{
+    float: right;
+    width: 20%;
+    background: #35424a;
+    padding: 15px;
+    margin-top: 20px;
+    color: #f2f2f2;
+    line-height: 1.5;
+}
+
+.service-aside input[type="text"], .service-aside input[type="email"]{
+    height: 25px;
+}
+.service-box{
+    height: 170px;
+    background: #e6e6e6;
+    margin: 10px;
+    padding: 30px;
+    line-height: 1.6;
+}
+
+/* Media Queries */
+
+@media(max-width: 640px){
+    .branding, .navbar {
+        float: none;
+    }
+    .branding h1{
+        margin-top: 0;
+        text-align: center;
+        padding-top: 15px;
+    }
+    header{
+        height: 120px;
+    }
+
+    header .container{
+        width: 100%;
+    }
+
+    .navbar{
+        margin-top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .showcase .content h1{
+        font-size: 35px;
+    }
+
+    .showcase .content{
+        width: 100%;
+        padding: 25px;
+        line-height: 1.5;
+    }
+
+    .newsettler .container{
+        width: 100%;
+    }
+
+    .subscribe{
+        float: none;
+    }
+
+    .settler-form{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .subscribe h3{
+        margin-top: 0;
+        font-size: 18px;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .newsettler{
+        height: 90px;
+    }
+
+
+    .tools{
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        margin: 20px 0 15px 0;
+    }
+
+    .boxes img{
+        width: 75px;
+    }
+
+    .boxes h3{
+        font-size: 18px;
+    }
+
+    .boxes{
+        padding: 5px 10px 5px 10px;
+    }
+
+    .about-section{
+        width: 100%;
+    }
+
+    .about-content{
+        float: none;
+        width: 70%;
+        margin: auto;
+    }
+
+    .about-aside{
+        width: 70%;
+        float: none;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .about-content .top-para{
+        text-align: justify;
+    }
+
+    .about-content h1, .about-aside h2{
+        text-align: center;
+        margin: 10px;
+    }
+
+    .service-container{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .service-items{
+        float: none;
+        width: 100%;
+    }
+
+    .service-items h1{
+        text-align: center;
+    }
+
+    .service-aside{
+        float: none;
+        width: 90%;
+        margin: auto;
+    }
+
+    .service-aside input[type="text"], .service-aside input[type="email"]{
+        width: 100%;
+    }
+
+    .service-box{
+        height: 250px;
+    }
+}
